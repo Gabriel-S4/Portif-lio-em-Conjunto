@@ -7,7 +7,6 @@ cards.forEach(card => {
   const descriptionAlt = card.querySelector('.description-alt');
   const avatarCard = card.querySelector('.avatar-card-normal'); // Seleciona apenas o avatar relacionado ao card
   const leftOrTopContainer = card.querySelector('.leftOrTop-container-normal'); // Relacionado ao card
-  const RightOrBottomContainer = card.querySelector('.RightOrBottom-container-normal'); // Relacionado ao card
   const btnSaibaMais = card.querySelector('.container-btn');
 
   card.addEventListener('mouseover', () => {

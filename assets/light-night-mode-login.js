@@ -4,7 +4,6 @@ function trocarCor() {
     let footer = document.querySelector('.footer');
     let loginColor = document.querySelector('.title-pag');
     let loginText = document.querySelector('.title-pag h1')
-    let cardColor = document.querySelectorAll('.card');
 
     if(header.style.backgroundColor == `white`){
       header.style.backgroundColor = 'rgb(63, 63, 63)';
