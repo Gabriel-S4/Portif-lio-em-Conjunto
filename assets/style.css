@@ -88,11 +88,6 @@ header {
   background-repeat: no-repeat;
 }
 
-.btn-color-site:hover {
-  filter: invert(100%);
-  background-position:right;
-}
-
 .btnColorSiteBlack {
   filter: invert(100%);
   width: 80px;
