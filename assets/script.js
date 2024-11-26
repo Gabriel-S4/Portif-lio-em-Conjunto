@@ -31,11 +31,6 @@ cards.forEach(card => {
       leftOrTopContainer.classList.add('leftOrTop-container-expanded');
     }
 
-    if (RightOrBottomContainer) {
-      RightOrBottomContainer.classList.remove('RightOrBottom-container-normal');
-      RightOrBottomContainer.classList.add('RightOrBottom-container-expanded');
-    }
-
     const lastCard = document.getElementById('last-card');
     if(lastCard.clientWidth > `310`){
     carousel.scrollLeft += 800
@@ -64,10 +59,6 @@ cards.forEach(card => {
       leftOrTopContainer.classList.remove('leftOrTop-container-expanded');
     }
 
-    if (RightOrBottomContainer) {
-      RightOrBottomContainer.classList.add('RightOrBottom-container-normal');
-      RightOrBottomContainer.classList.remove('RightOrBottom-container-expanded');
-    }
   });
 });
 
@@ -78,11 +69,11 @@ const carousel = document.getElementById('carousel')
 let scrollSize = carousel.scrollLeft;
 
 function buttonNext() {
-    carousel.scrollLeft += 340
+    carousel.scrollLeft += 300
 }
 
 function buttonPre() {
-    carousel.scrollLeft -= 340
+    carousel.scrollLeft -= 300
 }
 
 // Verifica se o card é o último e rola a barra de scroll horizontal
@@ -91,38 +82,3 @@ document.addEventListener('mouseenter', (event) => {
     carousel.scrollLeft += 500
   }
 });
-
-function trocarCor() {
-  let header = document.querySelector('.header');
-  let text = document.querySelectorAll('.link'); //todos os que tiverem a classe link
-  let footer = document.querySelector('.footer');
-
-  if(header.style.backgroundColor == `white`){
-    header.style.backgroundColor = 'rgb(63, 63, 63)';
-    footer.style.backgroundColor = 'rgb(59, 59, 59)';
-    footer.style.color = 'white';
-    text.forEach((text) => {
-      text.style.color = 'white';
-    });
-  } else{
-
-    header.style.backgroundColor = `white`;
-    footer.style.backgroundColor = 'white';
-    footer.style.color = 'rgb(59, 59, 59)';
-    text.forEach((text) => {
-      text.style.color = 'black';
-    });
-  }
-
-  const btnColorSite = document.querySelector('.btn-color-site, .btnColorSiteBlack');
-
-  if (btnColorSite) {
-    if (btnColorSite.classList.contains('btn-color-site')) {
-      btnColorSite.classList.remove('btn-color-site');
-      btnColorSite.classList.add('btnColorSiteBlack');
-    } else {
-      btnColorSite.classList.remove('btnColorSiteBlack');
-      btnColorSite.classList.add('btn-color-site');
-    }
-  }
-}
