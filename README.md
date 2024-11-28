@@ -6,7 +6,7 @@ Este portfólio foi desenvolvido como parte da cadeira de Desenvolvimento Web do
 Neste projeto, foram utilizadas as seguintes tecnologias:
 
 - HTML5: Para a estruturação do conteúdo da página.
-- CSS: Para estilização e design da interface.
+- CSS3: Para estilização e design da interface.
 - JavaScript: Para interatividade e manipulação dinâmica da página.
 
 Essas tecnologias formam a base de qualquer desenvolvimento web e foram escolhidas para garantir que o portfólio fosse implementado de forma simples e eficiente, sem depender de frameworks ou bibliotecas externas.
