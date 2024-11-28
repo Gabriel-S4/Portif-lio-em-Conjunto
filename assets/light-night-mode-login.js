@@ -9,7 +9,7 @@ function trocarCor() {
       header.style.backgroundColor = 'rgb(63, 63, 63)';
 
       footer.style.backgroundColor = 'rgb(59, 59, 59)';
-      footer.style.color = 'white';
+      footer.style.color = 'rgb(209, 209, 209)';
 
       loginColor.style.backgroundColor = `rgba(0,0,0,0.6)`;
       loginText.style.color = `white`;
@@ -20,7 +20,7 @@ function trocarCor() {
     } else{
       header.style.backgroundColor = `white`;
 
-      footer.style.backgroundColor = 'white';
+      footer.style.backgroundColor = 'rgb(209, 209, 209)';
       footer.style.color = 'rgb(59, 59, 59)';
 
       loginColor.style.backgroundColor = `rgba(255,255,255,0.5)`;

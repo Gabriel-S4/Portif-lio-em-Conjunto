@@ -1,4 +1,3 @@
-
 function tamanhotext(){
     let inputText = document.getElementById('input-text').value;
     console.log(inputText);

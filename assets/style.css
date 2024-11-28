@@ -12,7 +12,9 @@ html {
 body {
   height: 100vh;
   background-image: url(./imgs/pexels-francesco-ungaro-1525041.jpg);
+  background-attachment: fixed;
   background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
 }
@@ -25,14 +27,24 @@ header {
   display: flex;
   justify-content: space-between;
   transition: all 500ms;
+  z-index: 5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .left, .right {
-  width: auto;
+  width: 230px;
   margin: 0px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.left {
+  justify-content: left;
+}
+
+.right {
+  justify-content: right;
 }
 
 /* HEADER - LEFT */
@@ -47,7 +59,7 @@ header {
 .center {
   display: flex;
   align-items: center;
-  margin: 0px 25px;
+  margin: 0px 10px;
 }
 .center ul {
   display: flex;
@@ -123,7 +135,7 @@ main {
 }
 
 .title-pag-home h1{
-  width: 300px;
+  width: 500px;
   height: 100px;
   color: rgb(0, 0, 0);
   display: flex;
@@ -134,7 +146,7 @@ main {
 }
 
 .title-pag-home h1:hover {
-  color: rgb(143, 145, 143);
+  color: greenyellow;
   transform: translateY(-5px);
 }
 /* Container do Carrossel */
@@ -155,6 +167,7 @@ main {
   justify-content: center;
   box-shadow: 0px 0px 5px black;
   background-color: rgba(0, 0, 0,0.4);
+  z-index: 1;
 }
 
 
@@ -343,13 +356,50 @@ main {
 
 footer {
   height: 100px;
-  background-color: rgb(59, 59, 59);
+  background-color: rgb(37, 37, 37);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:center;
   color: white;
+  text-align: center;
   transition: all 500ms;
+  padding: 15px;
+  gap: 30px;
 }
+
+.logo-contact {
+  width: 25px;
+  height: auto;
+}
+
+.footer-empresa {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-empresa a{
+  text-decoration: none;
+  font-size: 20px;
+  text-shadow: 0px 2px 2px black;
+}
+
+.footer-empresa .contact-Instagram {
+  color: palevioletred;
+}
+
+.footer-empresa .contact-zap {
+  color: palegreen;
+}
+
+.footer-empresa .contact-email {
+  color: rgb(247, 133, 133);
+}
+
+.footer-empresa .contact-linkedin {
+  color: paleturquoise;
+}
+
 
 /* Responsividade */
 
@@ -359,7 +409,7 @@ footer {
 
 @media (max-width: 1140px){
   .menu-btn {
-    width: 40%;
+    width: auto;
     height: 100%;
   }
 
@@ -407,9 +457,17 @@ footer {
     gap: 10px;
     padding: 10px;
   }
+
+  footer {
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 @media (max-width: 380px){ 
+  .menu-btn {
+    width: 400px;
+  }
   .carousel {
     width: 620px;
     width: auto;

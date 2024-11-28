@@ -1,4 +1,3 @@
-// Seleciona todos os cards
 const cards = document.querySelectorAll('.card');
 
 // Adiciona eventos de mouseover e mouseout para cada card
@@ -18,13 +17,13 @@ cards.forEach(card => {
     card.style.width = `600px`; // Card expande
     btnSaibaMais.style.display = `flex`;
 
-    // Altera a classe do avatar relacionado
+    // Altera a classe do avatar
     if (avatarCard) {
       avatarCard.classList.remove('avatar-card-normal');
-      avatarCard.classList.add('avatar-card-expanded'); // Adiciona a classe de expansão
+      avatarCard.classList.add('avatar-card-expanded');
     }
 
-    // Altera os containers relacionados
+    // Altera os containers
     if (leftOrTopContainer) {
       leftOrTopContainer.classList.remove('leftOrTop-container-normal');
       leftOrTopContainer.classList.add('leftOrTop-container-expanded');
@@ -38,7 +37,7 @@ cards.forEach(card => {
   });
 
   card.addEventListener('mouseout', () => {
-    // Restaura o card ao estado normal
+    // Restaura o card ao tamanho normal
     card.classList.remove('expanded');
     card.classList.add('card');
     description.style.display = 'block'; // Mostra a descrição pequena

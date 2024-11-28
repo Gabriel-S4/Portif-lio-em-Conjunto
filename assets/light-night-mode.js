@@ -10,8 +10,8 @@ function trocarCor() {
 
       header.style.backgroundColor = 'rgb(63, 63, 63)';
 
-      footer.style.backgroundColor = 'rgb(59, 59, 59)';
-      footer.style.color = 'white';
+      footer.style.backgroundColor = 'rgb(37, 37, 37)';
+      footer.style.color = 'rgb(209, 209, 209)';
 
       text.forEach((link) => {
           link.style.color = 'white';
@@ -32,8 +32,8 @@ function trocarCor() {
   } else {
       header.style.backgroundColor = 'white';
 
-      footer.style.backgroundColor = 'white';
-      footer.style.color = 'rgb(59, 59, 59)';
+      footer.style.backgroundColor = 'rgb(209, 209, 209)';
+      footer.style.color = 'rgb(37, 37, 37)';
 
       text.forEach((link) => {
           link.style.color = 'black';

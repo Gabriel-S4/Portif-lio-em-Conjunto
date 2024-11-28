@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Equipe - AV2 Web Dev</title>
+  <title>Galeria - AV2 Web Dev</title>
+  <link rel="shortcut icon" href="assets/imgs/documentHeader.png" type="image/x-icon">
   <link rel="stylesheet" href="assets/style-pag2.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Tiny5&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="assets/imgs/documentHeader.png" type="image/x-icon">
+  
+  <script defer src="assets/Scroll-Animations.js"></script>
+
 </head>
 <body>
 
@@ -27,7 +31,7 @@
     </nav>
     <div class="right">
       <img src="./assets/imgs/IconFontSize.png" alt="Lupa" class="sizeIcon">
-      <input type="range" min="16" max="40" value="16" id="fontSizeRange" class="btn-fontSize">
+      <input type="range" min="16" max="24" value="16" id="fontSizeRange" class="btn-fontSize">
       <button class="btn-color-site" onclick="trocarCor()"></button>
     </div>
   </header>
@@ -39,93 +43,122 @@
 
     <!-- Seções de cada membro -->
     <section class="cards">
-        <div class="pessoa" id="gabrielsa">
+        <div class="hidden" id="gabrielsa">
           <h2>Gabriel Sá</h2>
           <div class="conteudo">
             <div class="fotos">
-              <img src="assets/imgs/Gabriel.png" alt="Foto 1 - Gabriel Sá">
-              <img src="assets/imgs/Gabriel.png" alt="Foto 2 - Gabriel Sá" class="Espacamento">
+              <img class="foto2" src="assets/imgs/Gabriel foto3.jpg">
+              <img class="foto2" src="assets/imgs/gabriel foto4.png.jpg" class="Espacamento">
             </div>
             <div class="descricao">
-              <p>Editor, Gamer e estudante de Desenvolvimento Front-End. Apaixonado por tecnologia e criatividade.</p>
+              <img class="foto1" src="assets/imgs/Gabriel.png" alt="Foto 1 - Gabriel Sá">
+              <p>Sou fascinado por tecnologia desde criança, sempre tive interesse em hardware e eletrônica. Já fiz freelances com design, edição de fotos e vídeos, e atualmente estudo programação com foco em front-end enquanto procuro oportunidade de estágio. Tenho experiência em manutenção e montagem de computadores, além de configuração de dispositivos como impressoras e roteadores. Aliás, Eu jogo joguinhos massa tipo Minecraft, Valorant, The Witcher 3, Skyrim, DayZ e outros...</p>
             </div>
           </div>
         </div>
-        <hr class="distancy">
-        <div class="pessoa"  id="matutoclailson">
+      <hr class="distancy">
+        <div class="hidden" id="matutoclailson">
           <h2>Clailson</h2>
           <div class="conteudo">
             <div class="fotos">
-              <img src="assets/imgs/Clailson-Avatar.png" alt="Foto 1 - Clailson">
-              <img src="assets/imgs/Clailson-Avatar.png" alt="Foto 2 - Clailson" class="Espacamento">
+              <img class="foto2" src="assets/imgs/Clailson foto1.jpg">
+              <img class="foto2" src="assets/imgs/Clailson foto2.jpg" class="Espacamento">
             </div>
             <div class="descricao">
-              <p>Amante da inovação, especialista em lógica e apaixonado por desafios de programação.</p>
+              <img class="foto1" src="assets/imgs/Clailson-Avatar.png">
+              <p>Eu sou uma pessoa que gosta de se divertir e aprender de várias formas. No meu tempo livre, curto jogar Valorant e Red Dead Redemption, onde me desafiam a ser estratégico e a explorar novos mundos. Também sou fã de filmes de ação, sempre em busca de muita adrenalina e emoção. Além disso, leio ativamente, pois acredito que a leitura é uma ótima maneira de expandir o conhecimento. E, claro, adoro programar, criando soluções e me aprimorando sempre no mundo da tecnologia.</p>
             </div>
           </div>
         </div>
-        <hr class="distancy">
-        <div class="pessoa" id="luizeduardo">
+      <hr class="distancy">  
+        <div class="hidden" id="luizeduardo">
             <h2>Luiz Eduardo</h2>
             <div class="conteudo">
                 <div class="fotos">
-                    <img src="assets/imgs/Luiz Eduardo-Avatar.png" alt="Foto 1 - Clailson">
-                    <img src="assets/imgs/Luiz Eduardo-Avatar.png" alt="Foto 2 - Clailson" class="Espacamento">
+                    <img class="foto2" src="assets/imgs/Luiz foto2.jpg">
+                    <img class="foto2" src="assets/imgs/Luiz foto1.jpg" class="Espacamento">
                 </div>
                 <div class="descricao">
-                    <p>Amante da inovação, especialista em lógica e apaixonado por desafios de programação.</p>
+                  <img class="foto1" src="assets/imgs/Luiz Eduardo-Avatar.png">
+                  
+                  <p>
+                    Meu nome é Luiz Eduardo de França Rodrigues, sou apaixonado por tecnologia, especialmente por desenvolvimento de software e projetos relacionados a IoT e robótica, áreas nas quais já tenho experiência acadêmica e prática. Também tenho formação em Direito, o que me proporcionou uma base sólida em análise crítica, resolução de problemas e pensamento estratégico, habilidades que aplico tanto no campo jurídico quanto no tecnológico.  Nos meus momentos livres, gosto de me aprofundar em novas tecnologias, participar de eventos de tecnologia e buscar formas de aplicar minhas habilidades para contribuir com a sociedade. Sou movido por desafios e acredito que o aprendizado contínuo é a chave para o sucesso profissional e pessoal.
+                  </p>
                 </div>
             </div>
         </div>
-        <hr class="distancy">
-        <div class="pessoa" id="matheusguanabara">
+      <hr class="distancy">
+        <div class="hidden" id="matheusguanabara">
             <h2>Matheus</h2>
             <div class="conteudo">
               <div class="fotos">
-                <img src="assets/imgs/Matheus-Avatar.png" alt="Foto 1 - Clailson">
-                <img src="assets/imgs/Matheus-Avatar.png" alt="Foto 2 - Clailson" class="Espacamento">
+                <img class="foto2" src="assets/imgs/Matheus foto1.jpg">
+                <img class="foto2" src="assets/imgs/Matheus foto2.jpg" class="Espacamento">
               </div>
               <div class="descricao">
-                <p>Amante da inovação, especialista em lógica e apaixonado por desafios de programação.</p>
-              </div>
+                <img class="foto1" src="assets/imgs/Matheus-Avatar.png">
+                <p>
+                  Sou estudante de Engenharia da Computação com foco em me tornar um desenvolvedor Back-End. Atualmente, minha stack principal é baseada em Java com Spring Boot, tecnologias que me permitem criar soluções robustas e escaláveis. Nos momentos de lazer, gosto de mergulhar em mundos fictícios, seja jogando ou lendo mangás, que me inspiram com histórias envolventes e criativas. Estou sempre em busca de aprender e aprimorar minhas habilidades, unindo minha paixão por tecnologia e desenvolvimento com meus hobbies preferidos
+                </p>
             </div>
           </div>
-          <hr class="distancy">
-        <div class="pessoa" id="joaonunes">
+        </div>
+      <hr class="distancy">
+        <div class="hidden" id="joaonunes">
             <h2>João victor</h2>
             <div class="conteudo">
               <div class="fotos">
-                <img src="assets/imgs/João-Avatar.png" alt="Foto 1 - Clailson">
-                <img src="assets/imgs/João-Avatar.png" alt="Foto 2 - Clailson" class="Espacamento">
+                <img class="foto2" src="assets/imgs/João foto1.png" class="Espacamento">
+                <img class="foto2" src="assets/imgs/João foto2.png" class="Espacamento">
               </div>
               <div class="descricao">
-                <p>Amante da inovação, especialista em lógica e apaixonado por desafios de programação.</p>
+                <img class="foto1" src="assets/imgs/João-Avatar.png">
+                <p>Estou atualmente estudando Engenharia da Computação com o foco em me tornar um desenvolvedor Back-End. Hoje em dia meu foco é nas plataformas Luau, Java e Lua Base, que são minha ideia do mundo de desenvolvimento de Metaverso e Entretenimento Digital, Nas horas vagas, eu sou muito fã do mundo histórico em documentários, de comunidades de jogos de simulação ou no mundo de modificação de jogos. Eu acredito que tudo neste mundo você consegue ampliar e modificar ao gosto de todos, sem deixar ninguém pra trás.</p>
               </div>
             </div>
           </div>
-          <hr class="distancy">
-          <div class="pessoa" id="jamyllesla">
+        <hr class="distancy">
+          <div class="hidden" id="jamyllesla">
             <h2>Jamylle</h2>
             <div class="conteudo">
               <div class="fotos">
-                <img src="assets/imgs/Jamylle-Avatar.png" alt="Foto 1 - Clailson">
-                <img src="assets/imgs/Jamylle-Avatar.png" alt="Foto 2 - Clailson" class="Espacamento">
+                <img class="foto2" src="assets/imgs/Jamylle foto1.jpg">
+                <img class="foto2" src="assets/imgs/Jamylle foto2.jpg" class="Espacamento">
               </div>
               <div class="descricao">
-                <p>Amante da inovação, especialista em lógica e apaixonado por desafios de programação.</p>
+                <img class="foto1" src="assets/imgs/Jamylle-Avatar.png">
+                <p>atleta de handebol, gamer mobile e estudante de desenvolvimento full-stack. apaixonada por desafios de programação.
+                  * Programação em JavaScript e Java
+                  * Gerenciamento de projetos com uso do app Trello
+                  * Conhecimento em redes de computadores e hardware 
+                  * Trabalho em equipe
+                  * Boa comunicação e relacionamento interpessoal 
+                  * Organização e gestão de tempo.</p>
               </div>
             </div>
           </div>
-      
-        <!-- Adicione mais seções para outros integrantes -->
-      </section>
+    </section>
       
   </main>
 
   <footer class="footer">
-    <blockquote>By: Gabriel Sá</blockquote>
+    <blockquote class="footer-empresa">
+      <img src="assets/imgs/insta-icon.svg" class="logo-contact" alt="instagram">
+      <a href="https://www.instagram.com/thaiscarla/" class="contact-Instagram">Instagram</a>
+    </blockquote>
+    <blockquote class="footer-empresa">
+      <img src="assets/imgs/zapzap-icon.svg" class="logo-contact" alt="Whatsapp">
+      <a href="https://wa.me/5521963124552" class="contact-zap">Whatsapp</a>
+    </blockquote>
+    <blockquote class="footer-empresa">
+      <img src="assets/imgs/email-icon.svg" class="logo-contact" alt="Email">
+      <a href="mailto:marlonkuririn@ufpe.com.br" class="contact-email">Enviar e-mail</a>
+    </blockquote>
+    <blockquote class="footer-empresa">
+      <img src="assets/imgs/linkedin-icon.png" class="logo-contact" alt="Linkedin">
+      <a href="https://www.linkedin.com/in/guanabara" class="contact-linkedin">Linkedin</a>
+    </blockquote>
   </footer>
   <script src="assets/light-night-pag2.js"></script>
-  <!-- <script src="assets/light-night-mode.js"></script> -->
 </body>
 </html>
