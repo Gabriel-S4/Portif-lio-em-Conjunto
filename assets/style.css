@@ -1,0 +1,426 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Quicksand';
+}
+
+html {
+  scroll-padding: 50px 50px;
+}
+
+body {
+  height: 100vh;
+  background-image: url(./imgs/pexels-francesco-ungaro-1525041.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  top: 0px;
+  position: sticky;
+  height: 100px;
+  background-color: rgb(63, 63, 63);
+  display: flex;
+  justify-content: space-between;
+  transition: all 500ms;
+}
+
+.left, .right {
+  width: auto;
+  margin: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HEADER - LEFT */
+
+.left-icon {
+  width: 60px;
+  height: auto;
+  margin: 10px;
+}
+
+/* HEADER - CENTER */
+.center {
+  display: flex;
+  align-items: center;
+  margin: 0px 25px;
+}
+.center ul {
+  display: flex;
+  gap: 70px;
+}
+.center ul li {
+  display: inline;
+}
+
+.link{  
+  color: white;
+  display: flex;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 500ms;
+}
+
+.link:hover {
+  color: rgb(179, 179, 179);
+  transform: translateY(-5px);
+}
+
+/* HEADER - RIGHT */
+
+.btn-color-site {
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 500ms;
+  background-image: url(../assets/imgs/nightday.png);
+  background-size: 30px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.btnColorSiteBlack {
+  filter: invert(100%);
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 500ms;
+  background-image: url(../assets/imgs/nightday.png);
+  background-size: 30px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.btn-color-site-icon {
+  width: 45px;
+}
+
+.btn-color-site-icon:hover {
+  filter: invert(100%);
+}
+
+/* main */
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-pag-home h1{
+  width: 300px;
+  height: 100px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 500ms;
+  cursor:default;
+}
+
+.title-pag-home h1:hover {
+  color: rgb(143, 145, 143);
+  transform: translateY(-5px);
+}
+/* Container do Carrossel */
+.main-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-btn {
+  width: 70.5%;
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 5px black;
+  background-color: rgba(0, 0, 0,0.4);
+}
+
+
+.carousel {
+  padding: 50px 0px 50px 25px;
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;  
+  scroll-behavior: smooth;
+}
+
+/* Botões do Carrossel */
+.pre-btn,
+.nxt-btn {
+  border: none;
+  border-radius: 25px 25px;
+  width: 5vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0,0.1) 100%);
+  cursor: pointer;
+  z-index: 5;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.5;
+  filter: invert(2);
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+  filter: drop-shadow(0px,0px,25px);
+}
+
+/* Container dos cards */
+
+.container {
+  width: auto;
+  display: flex;
+  gap: 25px;
+  padding: 0px 25px 0px 0px;
+}
+
+/* Cards main para cada pessoa do projeto */
+
+.card {
+  width: 300px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(63, 63, 63);
+  color: white;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+/* CARD EXPANDED */
+[class~="expanded"] {
+  position: relative;
+  width: 600px;
+  height: 420px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 20px;
+  transition: all 0.5s;
+  background-size: cover;
+  z-index: 1;
+}
+
+.expanded::before {
+  background-image: url('./imgs/wallpaper\ jpn\ avatar.jpg');
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover; 
+  filter: blur(2px); 
+  z-index: -1;
+  border-radius: 25px;
+}
+/* FOTO DA PESSOA - AVATAR */
+
+.avatar-card-normal {
+  margin: 10px 10px;
+  width: 240px;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 0px 0px 25px rgb(0, 0, 0,0.3);
+}
+
+.avatar-card-expanded {
+  margin: 10px 10px;
+  width: 150px;
+  height: auto;
+  border-radius: 100%;
+  box-shadow: 0px 0px 25px rgb(0, 0, 0,0.3);
+}
+
+/* CONTAINER DO AVATAR E DOS TEXTOS */
+
+.leftOrTop-container-normal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.leftOrTop-container-expanded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.RightOrBottom-container-normal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 25px;
+  background-color: rgb(63, 63, 63);
+  border-radius: 25px;
+}
+
+/* TEXTOS E DESCRIÇÕES DO CARD NORMAL E EXPANDIDO */
+
+.description {
+  font-size: 18px;
+  font-weight: 400;
+  max-height: 220px;
+  height: 80px;
+}
+
+.description-alt {
+  font-size: 18px;
+  font-weight: 400;
+  max-height: 220px;
+  display: none;
+  text-wrap: none;
+}
+
+/* Botão de saiba mais (sobre cada pessoa) */
+.container-btn {
+  display: none;
+  justify-content: center;
+}
+
+.btn {
+  width: 150px;
+  height: 35px;
+  background-color: rgba(194, 1, 1, 0.616);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  font-weight: 200;
+  transition: all 500ms;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 25px black;
+}
+
+/* Rodapé do site */
+
+footer {
+  height: 100px;
+  background-color: rgb(59, 59, 59);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 500ms;
+}
+
+/* Responsividade */
+
+@media (max-width: 1360px){
+
+}
+
+@media (max-width: 1140px){
+  .menu-btn {
+    width: 40%;
+    height: 100%;
+  }
+
+  .pre-btn,.nxt-btn {
+    display: none;
+  }
+
+  .carousel {
+    padding: 0px;
+    height: 100%;
+
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 0px;
+    height: 100%;
+  }
+}
+
+@media (max-width: 680px){
+  .center {
+    justify-content: center;
+    width: 40px;
+  }
+
+  .center ul {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .center ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: all 500ms;
+    gap: 10px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 380px){ 
+  .carousel {
+    width: 620px;
+    width: auto;
+    display: flex;
+    gap: 25px;
+    padding: 0px 25px 0px 0px;
+  }
+
+  .container {
+    padding: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
