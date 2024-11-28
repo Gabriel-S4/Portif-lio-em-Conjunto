@@ -402,10 +402,6 @@ footer {
 
 /* Responsividade */
 
-@media (max-width: 1360px){
-
-}
-
 @media (max-width: 1140px){
   .menu-btn {
     width: auto;
