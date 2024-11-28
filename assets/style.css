@@ -12,7 +12,6 @@ html {
 body {
   height: 100vh;
   background-image: url(./imgs/pexels-francesco-ungaro-1525041.jpg);
-  background-attachment: fixed;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -135,7 +134,7 @@ main {
 }
 
 .title-pag-home h1:hover {
-  color: greenyellow;
+  color: rgb(143, 145, 143);
   transform: translateY(-5px);
 }
 /* Container do Carrossel */
