@@ -15,7 +15,7 @@ Essas tecnologias formam a base de qualquer desenvolvimento web e foram escolhid
 Este portfólio possui as seguintes funcionalidades:
 
 - Página inicial: Apresentação do aluno e das principais informações sobre o curso e habilidades.
-- Projetos: Exibição dos projetos desenvolvidos ao longo da disciplina, com links e descrições detalhadas.
+- Galeria: Exibição dos projetos desenvolvidos ao longo da disciplina, com links e descrições detalhadas.
 - Contato: Formulário de contato para que visitantes possam enviar mensagens.
 
 ## Equipe
