@@ -17,3 +17,11 @@ Este portfólio possui as seguintes funcionalidades:
 - Página inicial: Apresentação do aluno e das principais informações sobre o curso e habilidades.
 - Projetos: Exibição dos projetos desenvolvidos ao longo da disciplina, com links e descrições detalhadas.
 - Contato: Formulário de contato para que visitantes possam enviar mensagens.
+
+## Equipe
+Pessoas envolvidas no desenvolvimento deste projeto colaborativo:
+- [@Gabriel-S4](https://github.com/Gabriel-S4)
+- [@MatheusNascimento87](https://github.com/MatheusNascimento87)
+- [@MickeyJPG](https://github.com/MickeyJPG)
+- [@ClailsonSantos](https://github.com/ClailsonSantos)
+- [@edufrannca](https://github.com/edufrannca)
