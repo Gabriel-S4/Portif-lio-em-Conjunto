@@ -22,3 +22,6 @@ Este portfólio possui as seguintes funcionalidades:
 Este é um projeto colaborativo criado por:
 - [@Gabriel-S4](https://github.com/Gabriel-S4)
 - [@MatheusNascimento87](https://github.com/MatheusNascimento87)
+- [@MickeyJPG](https://github.com/MickeyJPG)
+- [@ClailsonSantos](https://github.com/ClailsonSantos)
+- [@edufrannca](https://github.com/edufrannca)
