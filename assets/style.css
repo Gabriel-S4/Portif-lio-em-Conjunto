@@ -355,7 +355,6 @@ main {
 /* Rodapé do site */
 
 footer {
-  height: 100px;
   background-color: rgb(37, 37, 37);
   display: flex;
   align-items: center;
@@ -460,7 +459,6 @@ footer {
 
   footer {
     flex-direction: column;
-    height: 100%;
   }
 }
 
